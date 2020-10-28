@@ -1,14 +1,18 @@
 # Apache Drill Workshop
-Welcome to the Apache Drill workshop by Dark Labs!  This 180 minute workshop will cover:
+Welcome to the Apache Drill workshop by Charles Givre!  This 180 minute workshop will cover:
 * Overview of Apache Drill
 * Querying simple data
 * Querying nested data
 * Connecting external data sources
-* Writing User Defined Functions (UDFs)
 * Using Python to interact with Drill
 
-If you have any questions, please contact me at: givre_charles@bah.com.  
+If you have any questions, please contact me at: charles@datadistillr.com.  
 Don't forget to check out my blog at http://thedataist.com
 
-## Drill Version
-For this class we will be using a special "pre-release" version of Drill which is available here: https://drive.google.com/open?id=0Bygp_V8Ca-cpZWhYMkxoTlpJYUU.
+## Setting up Drill
+For this class we will be using Drill 1.18. You can either download and install Drill locally on your machine or use docker.  If you are setting this up on your local machine, go to https://drill.apache.org and follow the instructions here for installating in embedded mode: https://drill.apache.org/docs/installing-drill-in-embedded-mode/
+
+If you would like to use Docker, simply start Docker and run the following command:
+```
+docker run -i --name drill-1.18.0  -p 8047:8047  -t apache/drill:1.18.0 /bin/bash
+```
