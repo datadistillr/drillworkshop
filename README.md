@@ -14,5 +14,5 @@ For this class we will be using Drill 1.18. You can either download and install 
 
 If you would like to use Docker, simply start Docker and run the following command:
 ```
-docker run -i --name drill-1.19.0  -p 8047:8047  -t apache/drill:1.19.0 /bin/bash
+docker run -i --name drill-latest  -p 8047:8047  -t apache/drill /bin/bash
 ```
